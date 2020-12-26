@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Geo Project</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=[KEY_GOES_HERE]&callback=initMap&libraries=geometry&v=weekly"
+      defer
+    ></script>
+    <link rel="stylesheet" type="text/css" href="./index.css" />
+    <script src="./index.js"></script>
+  </head>
+  <body>
+    <form id="form">
+      <input id="search-field" type="text" placeholder="453 W 12th Avenue, Vancouver" />
+      <p>Is in the polygon? <span id="is-in-polygon">No Location Yet</span></p>
+    </form>
+    <div id="map"></div>
+  </body>
+</html>
